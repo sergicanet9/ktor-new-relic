@@ -1,0 +1,24 @@
+services:
+  app:
+    build: .
+    container_name: ktor_new_relic_app
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+  agent:
+    container_name: newrelic-infra
+    build:
+      context: newrelic-infra
+      dockerfile: newrelic-infra.dockerfile
+    cap_add:
+      - SYS_PTRACE
+    network_mode: host
+    pid: host
+    privileged: true
+    volumes:
+      - "/:/host:ro"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    restart: unless-stopped
+    env_file:
+      - .env
