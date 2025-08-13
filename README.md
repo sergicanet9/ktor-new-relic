@@ -62,7 +62,7 @@ Follow these steps to get the project up and running on your local machine.
 | Method | Endpoint      | Description                                                                                   |
 | :----- | :------------ | :-------------------------------------------------------------------------------------------- |
 | `GET`  | `/`           | Returns a simple message to verify the server is running.                                     |
-| `GET`  | `/api/report` | A simple route that simulates a transaction. Great for testing the New Relic instrumentation. |
+| `GET`  | `/report` | A simple route that simulates a transaction. Great for testing the New Relic instrumentation. |
 
 -----
 
