@@ -8,8 +8,8 @@ This project is a backend web application built with the **Ktor** framework in K
   * **Kotlin & Ktor**: A modern backend built with Kotlin and its Ktor framework.
   * **Gradle**: A build system for dependency management and project automation.
   * **Docker & Docker Compose**: Containerization of the application and the two New Relic agents for easy deployment.
-  * **New Relic APM**: Automatic instrumentation with the **Java Agent** to monitor transaction performance, logs, errors, and latency.
-  * **New Relic Infrastructure**: The **Infrastructure Agent** monitors the health of the container and host, including CPU, memory, and disk usage.
+  * **New Relic APM Agent**: Automatic instrumentation with the Java Agent to monitor transaction performance, logs, errors, and latency.
+  * **New Relic Infrastructure Agent**: The Infrastructure Agent monitors the health of the container and host, including CPU, memory, and disk usage.
   * **Makefile**: Automation of common tasks like building and running the project.
 
 -----
@@ -73,4 +73,4 @@ This project is fully instrumented with two key New Relic agents:
   * **New Relic Java Agent (APM)**: Monitors the application itself, collecting data on web transactions, external service calls, logs and errors.
   * **New Relic Infrastructure Agent**: Monitors the underlying host and Docker container, providing visibility into resource usage like CPU and memory.
 
-After running `make run` and making a few requests to the API endpoints, you'll be able to see both **APM transaction data** and **infrastructure metrics** in your New Relic dashboard.
+After running `make run` and making a few requests to the API endpoints, you'll be able to see the data in your New Relic account.
