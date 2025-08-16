@@ -2,7 +2,7 @@
 
 This project is a backend web application built with the **Ktor** framework in Kotlin. The application exposes two simple RESTful endpoints and is instrumented with **New Relic's APM and Infrastructure agents** to provide comprehensive monitoring.
 
------
+---
 
 ## 🚀 Features
   * **Kotlin & Ktor**: A modern backend built with Kotlin and its Ktor framework.
@@ -12,7 +12,7 @@ This project is a backend web application built with the **Ktor** framework in K
   * **New Relic Infrastructure Agent**: The Infrastructure Agent monitors the health of the container and host, including CPU, memory, and disk usage.
   * **Makefile**: Automation of common tasks like building and running the project.
 
------
+---
 
 ## 🛠️ Prerequisites
 
@@ -22,7 +22,7 @@ Make sure you have the following software installed on your system:
   * **Docker & Docker Compose**
   * **Git**
 
------
+---
 
 ## 🏁 Getting Started
 
@@ -55,16 +55,16 @@ Follow these steps to get the project up and running on your local machine.
 
     The application will be available at `http://localhost:8080`.
 
------
+---
 
 ## 📦 API Endpoints
 
-| Method | Endpoint      | Description                                                                                   |
-| :----- | :------------ | :-------------------------------------------------------------------------------------------- |
-| `GET`  | `/`           | Returns a simple message to verify the server is running.                                     |
+| Method | Endpoint | Description |
+| :----- | :------- | :---------- |
+| `GET`  | `/`           | Returns a simple message to verify the server is running. |
 | `GET`  | `/report` | A simple route that simulates a transaction. Great for testing the New Relic instrumentation. |
 
------
+---
 
 ## 📈 Monitoring with New Relic
 
